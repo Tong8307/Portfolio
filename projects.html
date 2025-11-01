@@ -1,216 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Modern Business - Start Bootstrap Template</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-        .tech-badge {
-            background-color: #e9ecef;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.875rem;
-            color: #495057;
-        }
-        .project-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        .project-image {
-            transition: transform 0.3s ease;
-        }
-        .project-image:hover {
-            transform: scale(1.03);
-        }
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-        }
-        .btn-outline-primary {
-            border-width: 2px;
-            font-weight: 500;
-        }
-        .btn-outline-primary:hover {
-            transform: translateY(-2px);
-        }
-    </style>
-</head>
-<body class="d-flex flex-column h-100 bg-light">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Projects Section-->
-        <section class="py-5">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    <p class="lead mt-3">A showcase of my recent work with source code and documentation</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1 - Enhanced -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center flex-column flex-md-row">
-                                    <div class="p-5 flex-grow-1">
-                                        <h2 class="fw-bolder">E-Commerce Platform</h2>
-                                        <p class="text-muted mb-3">A full-stack e-commerce solution with user authentication, payment processing, and inventory management.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-badge">React</span>
-                                            <span class="tech-badge">Node.js</span>
-                                            <span class="tech-badge">MongoDB</span>
-                                            <span class="tech-badge">Stripe API</span>
-                                            <span class="tech-badge">JWT</span>
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                
+                <!-- Enhanced Project Card 1 -->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="row g-0">
+                            <!-- Project Images Carousel -->
+                            <div class="col-md-6">
+                                <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/project1-main.jpg" class="d-block w-100" alt="Project 1 Main View" style="height: 300px; object-fit: cover;">
                                         </div>
-                                        <div class="project-links">
-                                            <a href="#" class="btn btn-outline-primary px-4">
-                                                <i class="bi bi-github me-2"></i>Source Code
-                                            </a>
-                                            <a href="#" class="btn btn-primary px-4">
-                                                <i class="bi bi-file-text me-2"></i>Project Report
-                                            </a>
-                                            <a href="#" class="btn btn-outline-secondary px-4">
-                                                <i class="bi bi-play-circle me-2"></i>Live Demo
-                                            </a>
+                                        <div class="carousel-item">
+                                            <img src="assets/project1-detail.jpg" class="d-block w-100" alt="Project 1 Details" style="height: 300px; object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/project1-code.jpg" class="d-block w-100" alt="Project 1 Code" style="height: 300px; object-fit: cover;">
                                         </div>
                                     </div>
-                                    <div class="p-3 p-md-0 pe-md-3">
-                                        <img class="img-fluid rounded-3 project-image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="E-Commerce Platform" />
-                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Project Card 2 - Enhanced -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center flex-column flex-md-row-reverse">
-                                    <div class="p-5 flex-grow-1">
-                                        <h2 class="fw-bolder">Machine Learning Model</h2>
-                                        <p class="text-muted mb-3">A predictive analytics model for customer segmentation using clustering algorithms and data visualization.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-badge">Python</span>
-                                            <span class="tech-badge">Scikit-learn</span>
-                                            <span class="tech-badge">Pandas</span>
-                                            <span class="tech-badge">Matplotlib</span>
-                                            <span class="tech-badge">Jupyter</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="btn btn-outline-primary px-4">
-                                                <i class="bi bi-github me-2"></i>Source Code
-                                            </a>
-                                            <a href="#" class="btn btn-primary px-4">
-                                                <i class="bi bi-file-text me-2"></i>Project Report
-                                            </a>
-                                            <a href="#" class="btn btn-outline-secondary px-4">
-                                                <i class="bi bi-play-circle me-2"></i>Live Demo
-                                            </a>
-                                        </div>
+                            
+                            <!-- Project Details -->
+                            <div class="col-md-6">
+                                <div class="p-4">
+                                    <h2 class="fw-bolder">E-Commerce Website</h2>
+                                    <p class="mb-3">A full-stack e-commerce platform with user authentication, product management, and payment integration.</p>
+                                    
+                                    <!-- Tech Stack -->
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-1">React</span>
+                                        <span class="badge bg-primary me-1">Node.js</span>
+                                        <span class="badge bg-primary me-1">MongoDB</span>
+                                        <span class="badge bg-primary me-1">Stripe API</span>
                                     </div>
-                                    <div class="p-3 p-md-0 ps-md-3">
-                                        <img class="img-fluid rounded-3 project-image" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Machine Learning Model" />
+                                    
+                                    <!-- Project Links -->
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <!-- Report Download -->
+                                        <a href="assets/project1-report.pdf" class="btn btn-outline-primary btn-sm" download>
+                                            <i class="bi bi-file-pdf me-1"></i>Project Report
+                                        </a>
+                                        <!-- Source Code -->
+                                        <a href="https://github.com/yourusername/project1" class="btn btn-outline-secondary btn-sm" target="_blank">
+                                            <i class="bi bi-github me-1"></i>Source Code
+                                        </a>
+                                        <!-- Live Demo -->
+                                        <a href="https://yourproject1-demo.com" class="btn btn-primary btn-sm" target="_blank">
+                                            <i class="bi bi-play-circle me-1"></i>Live Demo
+                                        </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Project Card 3 - Enhanced -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center flex-column flex-md-row">
-                                    <div class="p-5 flex-grow-1">
-                                        <h2 class="fw-bolder">Mobile Fitness App</h2>
-                                        <p class="text-muted mb-3">A cross-platform mobile application for tracking workouts, nutrition, and fitness progress with social features.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-badge">React Native</span>
-                                            <span class="tech-badge">Firebase</span>
-                                            <span class="tech-badge">Redux</span>
-                                            <span class="tech-badge">Chart.js</span>
-                                            <span class="tech-badge">Expo</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="btn btn-outline-primary px-4">
-                                                <i class="bi bi-github me-2"></i>Source Code
-                                            </a>
-                                            <a href="#" class="btn btn-primary px-4">
-                                                <i class="bi bi-file-text me-2"></i>Project Report
-                                            </a>
-                                            <a href="#" class="btn btn-outline-secondary px-4">
-                                                <i class="bi bi-play-circle me-2"></i>Live Demo
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-3 p-md-0 pe-md-3">
-                                        <img class="img-fluid rounded-3 project-image" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Mobile Fitness App" />
+                                    
+                                    <!-- Key Features -->
+                                    <div class="mt-3">
+                                        <h6 class="fw-bold">Key Features:</h6>
+                                        <ul class="small">
+                                            <li>User authentication & authorization</li>
+                                            <li>Shopping cart functionality</li>
+                                            <li>Payment gateway integration</li>
+                                            <li>Admin dashboard</li>
+                                            <li>Responsive design</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Call to action section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
-                <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+
+                <!-- Enhanced Project Card 2 -->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="row g-0">
+                            <!-- Project Images Grid -->
+                            <div class="col-md-6">
+                                <div class="row g-1 m-1">
+                                    <div class="col-6">
+                                        <img src="assets/project2-1.jpg" class="img-fluid rounded" alt="Project 2 View 1" style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/project2-2.jpg" class="img-fluid rounded" alt="Project 2 View 2" style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/project2-3.jpg" class="img-fluid rounded" alt="Project 2 View 3" style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/project2-4.jpg" class="img-fluid rounded" alt="Project 2 View 4" style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project Details -->
+                            <div class="col-md-6">
+                                <div class="p-4">
+                                    <h2 class="fw-bolder">Mobile Task Manager App</h2>
+                                    <p class="mb-3">A cross-platform mobile application for task management with real-time synchronization.</p>
+                                    
+                                    <!-- Tech Stack -->
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-1">React Native</span>
+                                        <span class="badge bg-primary me-1">Firebase</span>
+                                        <span class="badge bg-primary me-1">Redux</span>
+                                        <span class="badge bg-primary me-1">TypeScript</span>
+                                    </div>
+                                    
+                                    <!-- Project Links -->
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <a href="assets/project2-report.pdf" class="btn btn-outline-primary btn-sm" download>
+                                            <i class="bi bi-file-pdf me-1"></i>Project Report
+                                        </a>
+                                        <a href="https://github.com/yourusername/project2" class="btn btn-outline-secondary btn-sm" target="_blank">
+                                            <i class="bi bi-github me-1"></i>Source Code
+                                        </a>
+                                        <a href="#" class="btn btn-primary btn-sm">
+                                            <i class="bi bi-phone me-1"></i>App Demo
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Key Features -->
+                                    <div class="mt-3">
+                                        <h6 class="fw-bold">Key Features:</h6>
+                                        <ul class="small">
+                                            <li>Cross-platform compatibility</li>
+                                            <li>Real-time data sync</li>
+                                            <li>Push notifications</li>
+                                            <li>Offline functionality</li>
+                                            <li>Dark/Light theme</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
-                </div>
+
             </div>
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    </div>
+</section>
