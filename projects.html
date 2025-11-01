@@ -49,18 +49,26 @@
             <!-- Project Images Carousel -->
             <div class="col-md-7">
                 <div id="plushieStoreCarousel" class="carousel slide h-100" data-bs-ride="carousel">
-                    <div class="carousel-inner h-100">
+                    <div class="carousel-inner h-100 bg-light">
                         <div class="carousel-item active h-100">
-                            <img src="assets/plushie-store-main.jpg" class="d-block w-100 h-100" alt="Online Plushie Store Main Page" style="object-fit: cover;">
+                            <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                                <img src="assets/plushie-store-main.jpg" class="img-fluid rounded" alt="Online Plushie Store Main Page" style="max-height: 100%; object-fit: contain;">
+                            </div>
                         </div>
                         <div class="carousel-item h-100">
-                            <img src="assets/plushie-store-admin.jpg" class="d-block w-100 h-100" alt="Admin Dashboard" style="object-fit: cover;">
+                            <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                                <img src="assets/plushie-store-admin.jpg" class="img-fluid rounded" alt="Admin Dashboard" style="max-height: 100%; object-fit: contain;">
+                            </div>
                         </div>
                         <div class="carousel-item h-100">
-                            <img src="assets/plushie-store-products.jpg" class="d-block w-100 h-100" alt="Product Management" style="object-fit: cover;">
+                            <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                                <img src="assets/plushie-store-products.jpg" class="img-fluid rounded" alt="Product Management" style="max-height: 100%; object-fit: contain;">
+                            </div>
                         </div>
                         <div class="carousel-item h-100">
-                            <img src="assets/plushie-store-checkout.jpg" class="d-block w-100 h-100" alt="Checkout Process" style="object-fit: cover;">
+                            <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                                <img src="assets/plushie-store-checkout.jpg" class="img-fluid rounded" alt="Checkout Process" style="max-height: 100%; object-fit: contain;">
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#plushieStoreCarousel" data-bs-slide="prev">
@@ -77,56 +85,106 @@
             <!-- Project Details -->
             <div class="col-md-5">
                 <div class="p-4 p-md-5 h-100 d-flex flex-column">
-                    <h2 class="fw-bolder">KAWAII Online Plushie Store</h2>
-                    <p class="mb-3">A comprehensive e-commerce platform specializing in plush toys with multi-role user management, inventory control, and secure payment processing.</p>
+                    <h2 class="fw-bolder text-primary">KAWAII Online Plushie Store</h2>
+                    <p class="mb-3 text-muted">A comprehensive e-commerce platform specializing in plush toys with multi-role user management, inventory control, and secure payment processing.</p>
                     
                     <!-- Tech Stack -->
-                    <div class="mb-3">
-                        <span class="badge bg-primary me-1">PHP/Laravel</span>
-                        <span class="badge bg-primary me-1">MySQL</span>
-                        <span class="badge bg-primary me-1">JavaScript</span>
-                        <span class="badge bg-primary me-1">Bootstrap</span>
-                        <span class="badge bg-primary me-1">Stripe API</span>
-                        <span class="badge bg-primary me-1">Google Maps API</span>
+                    <div class="mb-4">
+                        <span class="badge bg-primary me-1 mb-2">PHP/Laravel</span>
+                        <span class="badge bg-primary me-1 mb-2">MySQL</span>
+                        <span class="badge bg-primary me-1 mb-2">JavaScript</span>
+                        <span class="badge bg-primary me-1 mb-2">Bootstrap</span>
+                        <span class="badge bg-primary me-1 mb-2">Stripe API</span>
+                        <span class="badge bg-primary me-1 mb-2">Google Maps API</span>
                     </div>
                     
                     <!-- Key Features Dropdown -->
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <div class="accordion" id="featuresAccordion">
-                            <div class="accordion-item">
+                            <div class="accordion-item border-0 shadow-sm">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse" aria-expanded="false" aria-controls="featuresCollapse">
-                                        <i class="bi bi-list-check me-2"></i>Key Features
+                                    <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse" aria-expanded="false" aria-controls="featuresCollapse">
+                                        <i class="bi bi-stars me-2 text-warning"></i>
+                                        Key Features
+                                        <span class="badge bg-primary ms-2">8</span>
                                     </button>
                                 </h2>
                                 <div id="featuresCollapse" class="accordion-collapse collapse" data-bs-parent="#featuresAccordion">
-                                    <div class="accordion-body p-0">
-                                        <ul class="list-group list-group-flush small">
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Multi-Role System:</strong> Admin, Staff, and Member roles with different permissions
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Advanced Security:</strong> Email verification, password hashing, account blocking
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Product Management:</strong> CRUD operations, multiple photos, category system
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Order Processing:</strong> Status tracking, cancellation, shipping management
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Shopping Experience:</strong> Wishlist, permanent cart, product filtering & sorting
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Payment Integration:</strong> Stripe API and fake payment options
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Admin Dashboard:</strong> Analytics, charts, and business insights
-                                            </li>
-                                            <li class="list-group-item border-0 px-0 py-2">
-                                                <strong>Inventory Management:</strong> Stock tracking with low-stock alerts
-                                            </li>
-                                        </ul>
+                                    <div class="accordion-body bg-light rounded-bottom">
+                                        <div class="row g-2">
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-people-fill text-primary mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Multi-Role System</strong>
+                                                        <p class="small text-muted mb-2">Admin, Staff, and Member roles with different permissions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-shield-lock text-success mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Advanced Security</strong>
+                                                        <p class="small text-muted mb-2">Email verification, password hashing, account blocking</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-box-seam text-info mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Product Management</strong>
+                                                        <p class="small text-muted mb-2">CRUD operations, multiple photos, category system</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-cart-check text-warning mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Order Processing</strong>
+                                                        <p class="small text-muted mb-2">Status tracking, cancellation, shipping management</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-heart text-danger mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Shopping Experience</strong>
+                                                        <p class="small text-muted mb-2">Wishlist, permanent cart, product filtering & sorting</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-credit-card text-success mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Payment Integration</strong>
+                                                        <p class="small text-muted mb-2">Stripe API and fake payment options</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-graph-up text-primary mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Admin Dashboard</strong>
+                                                        <p class="small text-muted mb-2">Analytics, charts, and business insights</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-bell text-warning mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Inventory Management</strong>
+                                                        <p class="small text-muted mb-2">Stock tracking with low-stock alerts</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +192,7 @@
                     </div>
                     
                     <!-- Project Links -->
-                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                    <div class="d-flex flex-wrap gap-2 mt-auto pt-3 border-top">
                         <!-- Report Download -->
                         <a href="assets/Slide pdf.pdf" class="btn btn-outline-primary btn-sm" download>
                             <i class="bi bi-file-pdf me-1"></i>Project Report
