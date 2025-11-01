@@ -199,75 +199,137 @@
         </div>
     </div>
 </div>
-                <!-- Enhanced Project Card 2 -->
-                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                    <div class="card-body p-0">
-                        <div class="row g-0">
-                            <!-- Project Images Grid -->
-                            <div class="col-md-6">
-                                <div class="row g-1 m-1">
-                                    <div class="col-6">
-                                        <img src="assets/project2-1.jpg" class="img-fluid rounded" alt="Project 2 View 1" style="height: 150px; width: 100%; object-fit: cover;">
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="assets/project2-2.jpg" class="img-fluid rounded" alt="Project 2 View 2" style="height: 150px; width: 100%; object-fit: cover;">
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="assets/project2-3.jpg" class="img-fluid rounded" alt="Project 2 View 3" style="height: 150px; width: 100%; object-fit: cover;">
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="assets/project2-4.jpg" class="img-fluid rounded" alt="Project 2 View 4" style="height: 150px; width: 100%; object-fit: cover;">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Project Details -->
-                            <div class="col-md-6">
-                                <div class="p-4">
-                                    <h2 class="fw-bolder">Mobile Task Manager App</h2>
-                                    <p class="mb-3">A cross-platform mobile application for task management with real-time synchronization.</p>
-                                    
-                                    <!-- Tech Stack -->
-                                    <div class="mb-3">
-                                        <span class="badge bg-primary me-1">React Native</span>
-                                        <span class="badge bg-primary me-1">Firebase</span>
-                                        <span class="badge bg-primary me-1">Redux</span>
-                                        <span class="badge bg-primary me-1">TypeScript</span>
-                                    </div>
-                                    
-                                    <!-- Project Links -->
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <a href="assets/project2-report.pdf" class="btn btn-outline-primary btn-sm" download>
-                                            <i class="bi bi-file-pdf me-1"></i>Project Report
-                                        </a>
-                                        <a href="https://github.com/yourusername/project2" class="btn btn-outline-secondary btn-sm" target="_blank">
-                                            <i class="bi bi-github me-1"></i>Source Code
-                                        </a>
-                                        <a href="#" class="btn btn-primary btn-sm">
-                                            <i class="bi bi-phone me-1"></i>App Demo
-                                        </a>
-                                    </div>
-                                    
-                                    <!-- Key Features -->
-                                    <div class="mt-3">
-                                        <h6 class="fw-bold">Key Features:</h6>
-                                        <ul class="small">
-                                            <li>Cross-platform compatibility</li>
-                                            <li>Real-time data sync</li>
-                                            <li>Push notifications</li>
-                                            <li>Offline functionality</li>
-                                            <li>Dark/Light theme</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+               <!-- Enhanced Project Card - Job Recruitment System -->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="row g-0">
+            <!-- Project Images Carousel -->
+            <div class="col-md-7">
+                <div id="recruitmentSystemCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="assets/recruitment-dashboard.jpg" class="d-block w-100 h-100" alt="Recruitment System Dashboard" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="assets/recruitment-job-listings.jpg" class="d-block w-100 h-100" alt="Job Listings Management" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="assets/recruitment-applications.jpg" class="d-block w-100 h-100" alt="Application Management" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="assets/recruitment-interview-calendar.jpg" class="d-block w-100 h-100" alt="Interview Calendar" style="object-fit: cover;">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#recruitmentSystemCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#recruitmentSystemCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
             </div>
-        </div>
-    </div>
+            
+            <!-- Project Details -->
+            <div class="col-md-5">
+                <div class="p-4 p-md-5 h-100 d-flex flex-column">
+                    <h2 class="fw-bolder text-primary">HireRightPro Job Recruitment System</h2>
+                    <p class="mb-3 text-muted">A comprehensive web-based recruitment platform connecting employers and job seekers with advanced application tracking, interview scheduling, and analytics features.</p>
+                    
+                    <!-- Tech Stack -->
+                    <div class="mb-4">
+                        <span class="badge bg-primary me-1 mb-2">ASP.NET Core</span>
+                        <span class="badge bg-primary me-1 mb-2">MSSQL</span>
+                        <span class="badge bg-primary me-1 mb-2">JavaScript</span>
+                        <span class="badge bg-primary me-1 mb-2">Bootstrap</span>
+                        <span class="badge bg-primary me-1 mb-2">Stripe API</span>
+                        <span class="badge bg-primary me-1 mb-2">Google Maps API</span>
+                        <span class="badge bg-primary me-1 mb-2">reCAPTCHA</span>
+                    </div>
+                    
+                    <!-- Key Features Dropdown -->
+                    <div class="mb-4">
+                        <div class="accordion" id="recruitmentFeaturesAccordion">
+                            <div class="accordion-item border-0 shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#recruitmentFeaturesCollapse" aria-expanded="false" aria-controls="recruitmentFeaturesCollapse">
+                                        <i class="bi bi-briefcase me-2 text-primary"></i>
+                                        Key Features
+                                        <span class="badge bg-primary ms-2">12</span>
+                                    </button>
+                                </h2>
+                                <div id="recruitmentFeaturesCollapse" class="accordion-collapse collapse" data-bs-parent="#recruitmentFeaturesAccordion">
+                                    <div class="accordion-body bg-light rounded-bottom">
+                                        <div class="row g-2">
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-people text-success mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Multi-Role System</strong>
+                                                        <p class="small text-muted mb-2">Admin, Employer, and Job Seeker roles with tailored dashboards</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-shield-check text-info mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Advanced Security</strong>
+                                                        <p class="small text-muted mb-2">reCAPTCHA, login blocking, password hashing, email verification</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-file-earmark-text text-warning mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Job Management</strong>
+                                                        <p class="small text-muted mb-2">CRUD operations, Google Maps integration, filtering & sorting</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-calendar-event text-primary mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Interview Scheduling</strong>
+                                                        <p class="small text-muted mb-2">Calendar integration with email notifications</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-graph-up text-success mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Analytics Dashboard</strong>
+                                                        <p class="small text-muted mb-2">Charts, reports, PDF/Excel export functionality</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-question-circle text-info mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Custom Question Sets</strong>
+                                                        <p class="small text-muted mb-2">Drag-and-drop question management for applications</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-credit-card text-success mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Payment Integration</strong>
+                                                        <p class="small text-muted mb-2">Stripe API for premium subscriptions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-envelope text-warning mt-1 me-2"></i>
+                                                    <div>
+                                                        <strong class="text-dark">Email Automation</strong>
 </section>
         <!-- Call to action section-->
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
